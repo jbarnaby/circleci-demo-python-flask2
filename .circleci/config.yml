@@ -13,7 +13,7 @@ jobs:
           POSTGRES_DB: circle_test
           POSTGRES_PASSWORD: ""
     steps:
-      - checkout
+      - checkout:
           path: ~/repo
       - run: mkdir test-reports
       - run:
